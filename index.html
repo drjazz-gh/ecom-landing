@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura's Closet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="header-top">
+                <div class="logo">
+                    Laura's Closet
+                </div>
+                <div class="search-bar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                    <input type="text" placeholder="Search for an item...">
+                </div>
+                <div class="user-nav">
+                    <a href="#">Store</a>
+                    <a href="#">Account</a>
+                    <a href="#">Wish List</a>
+                    <a href="#" class="basket">Basket
+                        <!-- Replaced with provided shopping-basket 1.svg; paths use currentColor for easy theming -->
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <g clip-path="url(#clip0_31_5089)">
+                        <path d="M10.9763 13.7037C11.0035 13.7082 11.0305 13.7104 11.0572 13.7104C11.2916 13.7104 11.4986 13.5411 11.5384 13.3022L12.0269 10.3714C12.0712 10.1053 11.8915 9.8536 11.6253 9.80925C11.3592 9.76476 11.1076 9.94465 11.0632 10.2108L10.5747 13.1416C10.5304 13.4077 10.7101 13.6594 10.9763 13.7037Z" fill="currentColor"/>
+                        <path d="M5.16905 13.3021C5.20888 13.5411 5.41579 13.7104 5.65029 13.7104C5.67696 13.7104 5.70399 13.7082 5.73118 13.7037C5.99729 13.6593 6.17705 13.4076 6.1327 13.1415L5.64423 10.2107C5.59988 9.94461 5.34825 9.76489 5.0821 9.80921C4.81599 9.85356 4.63623 10.1052 4.68058 10.3713L5.16905 13.3021Z" fill="currentColor"/>
+                        <path d="M16.1854 5.89473H14.4663L10.7052 1.1934C10.5367 0.982809 10.2293 0.948583 10.0187 1.11714C9.808 1.28566 9.77384 1.59303 9.94239 1.80369L13.2152 5.89473H3.45949L6.73235 1.80369C6.90087 1.59303 6.86671 1.28563 6.65608 1.11714C6.44539 0.948583 6.13802 0.982776 5.96953 1.1934L2.20843 5.89473H0.489321C0.219557 5.89473 0.000854492 6.11344 0.000854492 6.3832V8.33707C0.000854492 8.60683 0.219557 8.82553 0.489321 8.82553H1.09782L2.95048 15.3098C3.01036 15.5195 3.20204 15.6641 3.42012 15.6641H13.2546C13.4727 15.6641 13.6643 15.5195 13.7243 15.3098L15.5769 8.82553H16.1854C16.4552 8.82553 16.6739 8.60683 16.6739 8.33707V6.3832C16.6739 6.11344 16.4552 5.89473 16.1854 5.89473ZM12.8862 14.6871H3.78856L2.11383 8.82553H14.5609L12.8862 14.6871ZM15.6969 7.8486C14.0236 7.8486 2.56303 7.8486 0.977788 7.8486V6.87167H15.6969V7.8486Z" fill="currentColor"/>
+                        <path d="M8.33736 13.7102C8.60712 13.7102 8.82583 13.4915 8.82583 13.2218V10.291C8.82583 10.0212 8.60712 9.80249 8.33736 9.80249C8.0676 9.80249 7.84889 10.0212 7.84889 10.291V13.2218C7.84889 13.4916 8.0676 13.7102 8.33736 13.7102Z" fill="currentColor"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_31_5089">
+                        <rect width="16.673" height="16.673" fill=#fafafa >
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">New Arrivals</a></li>
+                    <li><a href="#" class="flash">#Fresh</a></li>
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Tops</a></li>
+                    <li><a href="#">Jackets</a></li>
+                    <li><a href="#">Lingerie & Lounge Wear</a></li>
+                    <li><a href="#">Beach Wear</a></li>
+                    <li><a href="#">Blouse</a></li>
+                    <li><a href="#">Denim</a></li>
+                    <li><a href="#">Vintage</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Sandals</a></li>
+                    <li><a href="#">Bags</a></li>
+                    <li><a href="#">Jewelries</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="hero">
+            <div class="hero-content">
+                <h4>Get up to 30% off</h4>
+                <h1>New Arrivals</h1>
+                <p>Introducing our latest collection of products</p>
+                <a href="#" class="cta-button">
+                    PLACE YOUR ORDER
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="hero-image">
+           </div>
+            
+        </section>
+
+        <section class="highlights">
+            <h2>THIS WEEKS HIGHLIGHTS</h2>
+            <div class="grid-container">
+                
+                <div class="grid-item" id="item-1">
+                    <div class="card-content">
+                        <h3>Exclusive Shoes</h3>
+                        <p>Exclusive Shoes</p>
+                        <p class="price">PRICE 20% OFF</p>
+                        <p class="discount-code">DISCOUNT CODE - VATK3920</p>
+                    </div>
+                </div>
+
+                <div class="grid-item" id="item-3">
+                    <div class="card-content">
+                        <h3>New Arrivals</h3>
+                        <p>New Arrivals</p>
+                        <p class="price">PRICE 20% OFF</p>
+                        <p class="discount-code">DISCOUNT CODE - VATK3920</p>
+                    </div>
+                </div>
+
+                <div class="grid-item" id="item-2">
+                    <div class="card-content">
+                        <h3>Exquisite Styles & Collections</h3>
+                        <p>Exquisite Styles & Collections</p>
+                        <p class="price">PRICE 30% OFF</p>
+                        <p class="discount-code">DISCOUNT CODE - VATK3920</p>
+                    </div>
+                </div>
+
+                <div class="grid-item" id="item-4">
+                    <div class="card-content">
+                        <h3>Exclusive Items</h3>
+                        <p>Exclusive Items</p>
+                        <p class="price">PRICE 20% OFF</p>
+                        <p class="discount-code">DISCOUNT CODE - VATK3920</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,349 @@
+/* ======== GLOBAL RESET & SETUP ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+/* A container to center content */
+.header-container, .highlights {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ======== HEADER & NAVIGATION ======== */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #fafafa;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 8px 12px;
+    width: 30%;
+}
+
+.search-bar svg {
+    color: #888;
+    margin-right: 8px;
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.user-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #6B7280
+}
+
+.user-nav .basket {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    color:#1F2937
+}
+
+/* Ensure the inline SVG basket icon matches text color and sizes consistently */
+.user-nav .basket svg {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+    color:#000000 ; /* use current text color */
+    fill: currentColor; /* for SVGs that honor presentation attributes */
+}
+
+.main-nav {
+    border-top: 1px solid #f0f0f0;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 12px 0;
+}
+
+.main-nav a {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.main-nav a:hover {
+    color: #000;
+}
+
+.main-nav a.active {
+    color: #000;
+    font-weight: 600;
+}
+
+.main-nav a.flash {
+    color: #fff;
+    font-weight: 700;
+    padding: 4.56px 2.78px;
+    border: 2px solid #EB5757;
+    border-radius: 0px;
+    background: #EB5757;
+    display: inline-block;
+    margin: 0 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+/* ======== HERO SECTION ======== */
+.hero {
+    display: flex;
+    min-height: 600px;
+    background-color: #232529; /* Dark background from left panel */
+}
+
+.hero-content {
+    flex-basis: 50%;
+    color: #fff;
+    padding: 100px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ccc;
+    text-transform: capitalize;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 12px 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    width: fit-content; /* Make button only as wide as its content */
+}
+
+.cta-button:hover {
+    background: #FFFFFF;
+    color: #232529;
+}
+
+.hero-image {
+    flex-basis: 50%;
+    background-color: #F7C59F; 
+    
+    background-image: 
+        url('./ASSETS/lady.png'),
+        /* MODIFIED LINE BELOW */
+        radial-gradient(
+            ellipse 165px 165px at 50% 45%, 
+            #fff 100%, 
+            transparent 100%
+        );
+    
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+/* ======== HIGHLIGHTS SECTION ======== */
+.highlights {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.highlights h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #555;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2-column grid */
+    gap: 20px;
+}
+
+.grid-item {
+    position: relative;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end; /* Aligns content to the bottom */
+}
+
+/* This dark overlay helps text stand out. Remove if not needed. */
+.grid-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+    opacity: 0.8;
+}
+
+.card-content {
+    position: relative; /* Sits on top of the ::before overlay */
+    z-index: 2;
+    background-color: rgba(40, 40, 40, 0.75);
+    color: #fff;
+    padding: 12px 20px;
+    margin: 20px;
+    text-align: left;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card-content p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #eee;
+    margin-top: 4px;
+}
+
+.card-content p.price {
+    font-weight: 600;
+}
+
+.card-content p.discount-code {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    color: #ccc;
+}
+
+/* !!! IMPORTANT !!!
+  Replace these placeholders with your actual product images.
+*/
+/* Grid item images replaced with files from the ASSETS folder */
+#item-1 {
+    background-image: url('./ASSETS/shoes.png');
+    background-position: center 60%; /* adjust as needed */
+    background-size: cover;
+}
+#item-3 {
+    background-image: url('./ASSETS/shoulder.png');
+    background-position: center;
+    background-size: cover;
+}
+#item-2 {
+    background-image: url('./ASSETS/clothes.png');
+    background-position: center;
+    background-size: cover;
+}
+#item-4 {
+    background-image: url('./ASSETS/bag.png');
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* ======== RESPONSIVE (Mobile) ======== */
+@media (max-width: 992px) {
+    .header-top {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .search-bar {
+        width: 80%;
+    }
+    .main-nav ul {
+        /* This will need a JavaScript 'hamburger' button for a real site */
+        /* For now, we'll just let it wrap */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .hero {
+        flex-direction: column;
+        min-height: auto;
+    }
+    .hero-content {
+        padding: 40px 24px;
+        text-align: center;
+        align-items: center;
+    }
+    .hero-image {
+        min-height: 450px;
+        flex-basis: auto;
+        background-size: 80%, 80%; /* Smaller background images on mobile */
+    }
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack grid items on mobile */
+    }
+}
